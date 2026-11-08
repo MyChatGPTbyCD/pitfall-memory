@@ -1,0 +1,12 @@
+# 生成的向量缓存（跟机器和模型绑定，不提交）
+tools/vectors.npz
+tools/vectors.json
+
+# Python
+__pycache__/
+*.pyc
+
+# 杂项
+.DS_Store
+Thumbs.db
+desktop.ini
