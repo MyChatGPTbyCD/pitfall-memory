@@ -1,6 +1,6 @@
 # 踩坑记忆索引
 
-> 由 `tools/mem.py index` 自动生成，最后更新 2026-11-08 22:58。共 14 条。
+> 由 `tools/mem.py index` 自动生成，最后更新 2026-11-08 23:22。共 15 条。
 > 开工前读这份；遇到症状先 `python tools/mem.py search "关键词"`。
 
 ## 怎么用
@@ -10,6 +10,12 @@ python tools/mem.py brief --project sword      # 速读：标题 + 一句解法
 python tools/mem.py search "灯不亮"            # 按症状搜
 python tools/mem.py show SWD-0005               # 看全文
 ```
+
+## general（1 条）
+
+| ID | 类型 | 分类 | 标题 | 严重度 | 标签 | 日期 |
+|---|---|---|---|---|---|---|
+| GEN-0001 | 坑 | 环境与工具链 | 推 .github/workflows 被拒：OAuth App 缺 workflow scope | 一般 | GitHub、gh、OAuth、权限 | 2026-11-08 |
 
 ## sword（14 条）
 

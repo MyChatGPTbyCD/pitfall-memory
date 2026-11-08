@@ -83,7 +83,7 @@ python tools/mem.py check
 
 两个实话：
 
-1. 条目少于两三百条时，**直接读 INDEX.md 比检索更快更准**。这个库现在 14 条，索引不到 3 KB。
+1. 条目少于两三百条时，**直接读 INDEX.md 比检索更快更准**。这个库现在 15 条，索引不到 3 KB。
 2. TF-IDF 是字面匹配，不是语义匹配。搜"灯带颜色不对"能命中，是因为条目里写了这几个字；只写"灯不亮"就搜不到。
 
 真要语义检索，加一层 embedding（需要 OpenAI 兼容接口，DeepSeek 官方没有 embedding）：
@@ -103,6 +103,7 @@ python tools/mem.py search "灯带颜色不对" --semantic
 | 项目 | 路径（我的本机） | 条数 |
 |---|---|---|
 | `sword` | `D:\My_Project\Sword` | 14（12 个坑 + 2 条架构原则） |
+| `general` | — | 1（跨项目通用：GitHub / gh 权限） |
 
 覆盖：CubeMX/PLL、DMA 初始化顺序与宽度、WS2812B 接线、HAL_BUSY、MPU6050 的 I2C 与 WHO_AM_I、Keil 的 MicroLIB / error 35 / ST-Link、BSP 分层与中断原则。
 
