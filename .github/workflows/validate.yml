@@ -1,0 +1,22 @@
+name: 校验记忆库
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 校验条目格式
+        run: python3 tools/mem.py check
+
+      - name: 冒烟：确认索引和条目能被正常加载
+        run: python3 tools/mem.py brief --project sword > /dev/null
